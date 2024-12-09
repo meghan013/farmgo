@@ -65,7 +65,7 @@ public class FarmerController {
 	    ModelAndView mv = new ModelAndView();
 
 	    try (Connection conn = DriverManager.getConnection(
-	            "jdbc:mysql://localhost:3306/farmerdbs", "root", "@Mani7890")) {
+	            "jdbc:mysql://localhost:3306/farmgo", "root", "@Meghan013")) {
 	        
 	        // Check if username already exists
 	        String checkQuery = "SELECT COUNT(*) FROM farmer_table WHERE farmer_username = ?";

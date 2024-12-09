@@ -61,7 +61,7 @@ public class UserController {
         ModelAndView mv = new ModelAndView();
 
         try (Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/farmerdbs", "root", "@Mani7890")) {
+                "jdbc:mysql://localhost:3306/farmgo", "root", "@Meghan013")) {
             
             // Check if username already exists in the database
             String checkQuery = "SELECT COUNT(*) FROM user_table WHERE user_username = ?";
